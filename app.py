@@ -18,7 +18,7 @@ movies_list = movies_df['title'].values
 api_key = os.getenv('TMDB_API_KEY')
 
 def fetch_poster(movie_id):
-    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&language=en-US"
+    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=8b270da3995a7f4f7dfa2a4ed45a91eb&language=en-US"
     data = requests.get(url)
     data = data.json()
     poster_path = data['poster_path']
